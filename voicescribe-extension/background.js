@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener(async (msg, sender, sendResponse) => {
         recorder.ondataavailable = (e) => chunks.push(e.data);
 
         recorder.onstop = () => {
-            const blob = new Blob(chunks, { type: 'audio/webm' });
+            const blob = new Blob(chunks, { type: 'audio/mp3' });
             // Save blob for download when user asks
             chrome.storage.local.set({ recordingBlob: blob });
         };
