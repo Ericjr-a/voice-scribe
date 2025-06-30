@@ -15,7 +15,7 @@ interface AudioFile {
 }
 
 
-const apiBase = import.meta.env.VITE_API_URL || "https://voicescribe-production.up.railway.app/api";
+const apiBase = import.meta.env.VITE_API_URL || "https://voice-scribe-production.up.railway.app/";
 
 const uploadToAssemblyAI = async (file: File): Promise<string | null> => {
   try {
