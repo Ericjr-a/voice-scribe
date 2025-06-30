@@ -78,7 +78,7 @@ if (!window.voiceScribeWidgetLoaded) {
         mediaRecorder = new window.MediaRecorder(stream);
         mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
         mediaRecorder.onstop = () => {
-            const blob = new Blob(audioChunks, { type: 'audio/webm' });
+            const blob = new Blob(audioChunks, { type: 'audio/mp3' });
             const url = URL.createObjectURL(blob);
             const link = document.getElementById('vs-download');
             link.href = url;
