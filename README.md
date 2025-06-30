@@ -29,4 +29,10 @@
 
 ### 1. Clone the Repository & Install Dependencies
 
+### Commands to use:
+- **node server/server.cjs**
+- **npm run dev**
+- **Simplified explanation in :**
+
+
 
