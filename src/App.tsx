@@ -349,33 +349,33 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
       {/* Bolt.new badge in top right */}
-<div
-  style={{
-    position: 'fixed',
-    top: 18,
-    right: 18,
-    zIndex: 1000,
-    background: 'rgba(255,255,255,0.8)',
-    borderRadius: 12,
-    boxShadow: '0 2px 8px #0001',
-    padding: 4,
-    display: 'flex',
-    alignItems: 'center'
-  }}
->
-  <a
-    href="https://bolt.new/?ref=badge"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Built with Bolt.new"
-  >
-    <img
-      src="https://bolt.new/badge.svg"
-      alt="Built with Bolt.new"
-      style={{ height: 36, width: 'auto', display: 'block' }}
-    />
-  </a>
-</div>
+      <div
+        style={{
+          position: 'fixed',
+          top: 18,
+          right: 18,
+          zIndex: 1000,
+          background: 'rgba(255,255,255,0.8)',
+          borderRadius: 12,
+          boxShadow: '0 2px 8px #0001',
+          padding: 4,
+          display: 'flex',
+          alignItems: 'center'
+        }}
+      >
+        <a
+          href="https://bolt.new/?ref=badge"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Built with Bolt.new"
+        >
+          <img
+            src="https://bolt.new/badge.svg"
+            alt="Built with Bolt.new"
+            style={{ height: 36, width: 'auto', display: 'block' }}
+          />
+        </a>
+      </div>
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto">
