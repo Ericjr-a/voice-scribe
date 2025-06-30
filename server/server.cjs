@@ -18,13 +18,14 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.use(cors({
     origin: [
-        "https://cheery-kheer-1eb7d9.netlify.app",
-        "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3-8xr61ndj--5173--cb7c0bca.local-credentialless.webcontainer-api.io",
+        "https://celebrated-quokka-03e0cb.netlify.app",
+        "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--cb7c0bca.local-credentialless.webcontainer-api.io",
         "http://localhost:5173"
     ],
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 
 // File upload config
 const upload = multer({ dest: path.join(__dirname, 'uploads/') });
