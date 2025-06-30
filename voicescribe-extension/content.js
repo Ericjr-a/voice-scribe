@@ -29,7 +29,7 @@ if (!window.voiceScribeWidgetLoaded) {
             <button id="vs-stop-btn" style="display:none;margin-top:12px;background:#b91c1c;color:white;border:none;padding:10px 22px;border-radius:10px;font-size:16px;cursor:pointer;">
                 Stop Recording
             </button>
-            <a id="vs-download" style="display:none;margin-top:12px;color:#2563eb;font-size:15px;" download="voicescribe-recording.webm">Download Audio</a>
+            <a id="vs-download" style="display:none;margin-top:12px;color:#2563eb;font-size:15px;" download="voicescribe-recording.mp3">Download Audio</a>
         </div>
     `;
 
