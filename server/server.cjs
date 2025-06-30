@@ -17,13 +17,21 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.use(cors({
-    origin: [
-        "https://celebrated-quokka-03e0cb.netlify.app",
-        "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--cb7c0bca.local-credentialless.webcontainer-api.io",
-        "http://localhost:5173"
-    ],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
+  origin: (origin, callback) => {
+    // Allow Netlify, localhost, and all local-credentialless.webcontainer-api.io previews
+    if (
+      !origin ||
+      origin.includes('local-credentialless.webcontainer-api.io') ||
+      origin.includes('netlify.app') ||
+      origin.startsWith('http://localhost:')
+    ) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 
