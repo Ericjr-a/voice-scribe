@@ -19,7 +19,6 @@
 ## 🚀 Demo
 
 - **Live Frontend:** [https://cheery-kheer-1eb7d9.netlify.app/](https://cheery-kheer-1eb7d9.netlify.app/)
-- **Live Backend API:** [https://voice-scribe-production.up.railway.app/](https://voice-scribe-production.up.railway.app/)
 - **Bolt.new Project Link:** [https://bolt.new/~/sb1-fyrhg3ov/](https://bolt.new/~/sb1-fyrhg3ov/)
 
 ---
