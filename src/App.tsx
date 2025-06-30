@@ -349,39 +349,38 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div
-  className="fixed top-5 right-5 z-50"
-  style={{ minWidth: 48, minHeight: 48 }}
->
-  <a
-    href="https://bolt.new/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Built with Bolt.new"
-    style={{
-      display: 'inline-block',
-      borderRadius: '9999px',
-      background: 'rgba(255,255,255,0.9)',
-      boxShadow: '0 2px 8px #0001',
-      padding: 4,
-      transition: 'box-shadow 0.2s',
-    }}
-  >
-    <img
-      src="https://github.com/kickiniteasy/bolt-hackathon-badge/raw/main/bolt-badge-black.svg"
-      alt="Built with Bolt.new"
-      style={{
-        width: '40px',
-        height: '40px',
-        maxWidth: '12vw',
-        minWidth: 32,
-        objectFit: 'contain',
-        display: 'block',
-      }}
-    />
-  </a>
-</div>
+        className="fixed top-5 right-5 z-50"
+        style={{ minWidth: 48, minHeight: 48 }}
+      >
+        <a
+          href="https://bolt.new/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Built with Bolt.new"
+          style={{
+            display: 'inline-block',
+            borderRadius: '9999px',
+            background: 'rgba(255,255,255,0.9)',
+            boxShadow: '0 2px 8px #0001',
+            padding: 4,
+            transition: 'box-shadow 0.2s',
+          }}
+        >
+          <img
+            src="https://github.com/kickiniteasy/bolt-hackathon-badge/raw/main/bolt-badge-black.svg"
+            alt="Built with Bolt.new"
+            style={{
+              width: '40px',
+              height: '40px',
+              maxWidth: '12vw',
+              minWidth: 32,
+              objectFit: 'contain',
+              display: 'block',
+            }}
+          />
+        </a>
+      </div>
 
-      
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
