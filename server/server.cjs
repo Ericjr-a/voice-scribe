@@ -18,7 +18,6 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow Netlify, localhost, and all local-credentialless.webcontainer-api.io previews
     if (
       !origin ||
       origin.includes('local-credentialless.webcontainer-api.io') ||
