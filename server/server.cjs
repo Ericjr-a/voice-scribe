@@ -9,6 +9,7 @@ const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 5010;
+
 const PUBLIC_BASE_URL = process.env.PUBLIC_BASE_URL || `http://localhost:${PORT}`;
 
 // Google Generative AI
@@ -202,3 +203,4 @@ app.post('/api/chat', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
