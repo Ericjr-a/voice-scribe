@@ -18,7 +18,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 app.use(cors({
     origin: [
-        "https://cheery-kheer-1eb7d9.netlify.app/",
+        "https://cheery-kheer-1eb7d9.netlify.app",
         "http://localhost:5173"
     ],
     methods: ["GET", "POST", "OPTIONS"],
